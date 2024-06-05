@@ -172,7 +172,7 @@ button {
     box-shadow: 2px 2px 2px gray;
 }
 .robe:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .panier {
     width: 250px;
@@ -235,7 +235,7 @@ P {
     align-items: flex-start;
     color: gold;
     position: absolute;
-    bottom: 10px;
+    bottom: 8px;
     right: -31px;
 
 
@@ -301,6 +301,7 @@ P {
 
 ul {
     list-style-type: none;
+    margin-bottom: 40px;
 }
 
 li {
@@ -320,7 +321,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 40px
+    margin: 30px
 }
 
 .flag {

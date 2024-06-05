@@ -1,0 +1,519 @@
+body {
+    /* background-image: url(images/fast-fashion-vs-slow-sustainable-fashion.jpg);
+    background-size: cover; */
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-top: 13px;
+    margin-right: 600px;
+animation:fade 2s linear  infinite;
+}
+
+@keyframes fade {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.liste {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 30px;
+
+
+}
+
+.lili {
+
+    display: inline-block;
+    padding: 0 30px;
+
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 0 30px;
+    font-family: montserrat, sans-serif;
+}
+
+i {
+    font-size: 35px;
+    padding-left: 5px;
+
+}
+
+.cart {
+    height: 35px;
+    width: 35px;
+}
+
+.name {
+    padding: 5px;
+    margin-left: 15px;
+}
+
+main {
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;  
+}
+
+.intro {
+    width: 100%;
+    max-width: 100vw; 
+    height: 546px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #EBE3E3;
+    padding: 0;
+    margin: 0;
+}
+
+.shop {
+    width: 259px;
+    height: 380px;
+
+
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 75px;
+    color: #3C2C5B;
+    padding: 20px;
+    text-shadow: 5px 5px 5px grey;
+    animation: grow 5s infinite alternate;
+}
+@keyframes grow {
+    0% {
+      
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+
+.collection {
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+
+}
+
+button {
+    background-color: #D15056;
+    border-radius: 7px;
+    border: 2px solid #3C2C5B;
+    box-shadow: 2px 2px 2px grey;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 5px;
+    color: white;
+}
+
+.produits {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.prod {
+    height: 650px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.robe {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px gray;
+}
+.robe:hover{
+    transform: scale(1.5);
+}
+.panier {
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+.butt {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+}
+
+.titre {
+    height: 80px;
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
+
+
+
+}
+
+h4 {
+    width: 180px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+
+
+}
+
+.prix {
+    font-family: " Bebas Neue", sans-serif;
+    font-size: 20px;
+
+
+}
+
+P {
+    font-family: "monteserrat", sans-serif;
+    color: #3C2C5B;
+    font-size: 16px;
+
+}
+
+.container {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    position: relative;
+}
+
+.star {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    color: gold;
+    position: absolute;
+    bottom: 10px;
+    right: -31px;
+
+
+}
+
+
+.fa-star {
+    display: flex;
+    font-size: 16px;
+    margin-top: 25px;
+
+}
+
+.chargement {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 40px;
+}
+
+.charger {
+    width: 320px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 0px;
+}
+
+.chevron {
+    display: flex;
+    margin: 20px;
+}
+
+.number {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    ;
+
+}
+
+.foot {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #EBE3E3;
+    padding-bottom: 30px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.pied {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 90px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: block;
+    font-family: monteserrat, sans-serif;
+    color: #3C2C5B;
+}
+
+.bas {
+    font-family: montesserat, sans-serif;
+    font-weight: bold;
+    color: #3C2C5B;
+}
+
+.dessous {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px
+}
+
+.flag {
+    border-radius: 3px;
+    width: 30px;
+}
+
+.fa-brands {
+    font-size: 20px;
+    color: gray;
+}
+
+.logi {
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+    .produits {
+        justify-content: space-between; 
+    }
+
+    .prod {
+        width: calc(33.33% - 80px);
+    }
+      
+    .logo {
+        margin-right: 20px; 
+    }
+
+    .liste {
+        padding: 0;
+    }
+
+    .lili {
+        padding: 0 10px; 
+    }
+     
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .shop{
+        width: 240px;
+    height: 354px;
+}
+h1{
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 63px;
+        color: #3C2C5B;
+        padding: 20px;
+}
+    }
+
+
+
+@media screen and (max-width: 768px) {
+    .produits {
+        justify-content: space-around; 
+    }
+
+    .prod {
+        width: calc(50% - 40px); 
+        margin-right: 20px;
+    }
+        .pied ul {
+            display: none;
+        }
+        
+    
+    .logo {
+        margin-right: 15px; 
+    }
+
+    .liste {
+        padding: 0;
+    }
+
+    .lili {
+        padding: 0 8px; 
+    }
+     
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+
+    .name {
+        width: 67px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .intro {
+        height: 246px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .produits{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prod {
+        height: 509px;
+        width: 200px;
+        display: flex;
+        justify-content:flex-start;
+        flex-direction: column;
+        margin: 20px;
+
+    }
+
+    .pied .bas {
+        width: 175px;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
+        border: 1px solid #3C2C5B;
+
+
+    }
+
+    .Media {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-right: 0px;
+        padding-right: 0px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .shop {
+        width: 100px;
+        height: 150px;
+    }
+
+    .robe {
+        width: 150px;
+        height: 350px;
+
+        border-radius: 40px;
+    }
+
+    .star {
+        right: 156px;
+        top: 50px;
+    }
+     .fa-star{
+
+        font-size: 12px;
+        margin-top: 25px;
+       
+    }
+
+    .prod h4 {
+        font-size: 16px;
+    }
+
+    .prix {
+        font-size: 16px;
+    }
+
+    .titre {
+        width: 170px;
+    }
+    footer
+    {width: 100%;}
+
+    .foot {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 200px;
+      
+       
+}
+.dessous {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+}
+}

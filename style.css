@@ -7,7 +7,6 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
-    overflow-x: hidden; 
 }
 
 header {
@@ -16,80 +15,76 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
+}
 
-
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
-    margin-top: 13px;
-    margin-right: 600px;
-animation:fade 2s linear  infinite;
+    width: 80px;
+    height: 80px;
+    animation: fade 2s linear infinite;
 }
 
 @keyframes fade {
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .liste {
     display: flex;
     list-style-type: none;
-    text-align: center;
-    padding: 0 30px;
-
-
+    margin: 0;
+    padding: 0;
 }
 
 .lili {
-
-    display: inline-block;
-    padding: 0 30px;
-
-
+    margin-left: 20px;
 }
 
 a {
     color: black;
     text-decoration: none;
-    padding: 0 30px;
     font-family: montserrat, sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 i {
-    font-size: 35px;
-    padding-left: 5px;
-
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 .cart {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
 
 .name {
-    padding: 5px;
-    margin-left: 15px;
+    padding: 10px;
 }
 
 main {
-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;  
+    margin: 0;
 }
 
 .intro {
     width: 100%;
-    max-width: 100vw; 
     height: 546px;
     display: flex;
     flex-wrap: wrap;
@@ -116,16 +111,18 @@ h1 {
     text-shadow: 5px 5px 5px grey;
     animation: grow 5s infinite alternate;
 }
+
 @keyframes grow {
     0% {
-      
-      transform: scale(1);
+
+        transform: scale(1);
     }
+
     100% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
-  }
-  
+}
+
 
 .collection {
     height: 50px;
@@ -164,6 +161,10 @@ button {
     margin: 40px;
 }
 
+.prod:hover {
+    transform: scale(1.1);
+}
+
 .robe {
     width: 300px;
     height: 400px;
@@ -171,9 +172,7 @@ button {
     border-radius: 20px;
     box-shadow: 2px 2px 2px gray;
 }
-.robe:hover{
-    transform: scale(1.2);
-}
+
 .panier {
     width: 250px;
     height: 40px;
@@ -199,7 +198,7 @@ button {
 }
 
 h4 {
-    width: 180px;
+    width: 130px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 20px;
 
@@ -213,7 +212,7 @@ h4 {
 
 }
 
-P {
+.prod p {
     font-family: "monteserrat", sans-serif;
     color: #3C2C5B;
     font-size: 16px;
@@ -228,8 +227,8 @@ P {
 }
 
 .star {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -321,7 +320,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px
+
 }
 
 .flag {
@@ -339,182 +338,302 @@ li {
     height: 70px;
 }
 
-@media screen and (max-width: 1024px) {
-    .produits {
-        justify-content: space-between; 
+/* Mobile Styles */
+@media (max-width: 767px) and (min-width: 0px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
     }
 
-    .prod {
-        width: calc(33.33% - 80px);
+    .menu {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
-      
+
     .logo {
-        margin-right: 20px; 
+        width: 60px;
+        height: 60px;
     }
 
     .liste {
-        padding: 0;
+        flex-direction: row;
+        align-items: center;
     }
 
     .lili {
-        padding: 0 10px; 
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
-     
-    header {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .shop{
-        width: 240px;
-    height: 354px;
-}
-h1{
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 63px;
-        color: #3C2C5B;
-        padding: 20px;
-}
-    }
-
-
-
-@media screen and (max-width: 768px) {
-    .produits {
-        justify-content: space-around; 
-    }
-
-    .prod {
-        width: calc(50% - 40px); 
-        margin-right: 20px;
-    }
-        .pied ul {
-            display: none;
-        }
-        
-    
-    .logo {
-        margin-right: 15px; 
-    }
-
-    .liste {
-        padding: 0;
-    }
-
-    .lili {
-        padding: 0 8px; 
-    }
-     
-    header {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
 
     .name {
-        width: 67px;
-        font-size: 12px;
-        text-align: center;
+        display: none;
     }
 
     .intro {
-        height: 246px;
+        width: auto;
+        height: 300px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
-    }
-    .produits{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .prod {
-        height: 509px;
-        width: 200px;
-        display: flex;
-        justify-content:flex-start;
-        flex-direction: column;
-        margin: 20px;
-
-    }
-
-    .pied .bas {
-        width: 175px;
-        height: 30px;
-        font-size: 12px;
-        text-align: center;
-        border: 1px solid #3C2C5B;
-
-
-    }
-
-    .Media {
-        width: 200px;
-    }
-
-    h1 {
-        font-size: 30px;
-        margin-right: 0px;
-        padding-right: 0px;
-        margin-left: 10px;
-        padding-left: 10px;
+        background-color: #EBE3E3;
+        padding: 0;
+        margin: 0;
+        background-image: url('images/610609fa2de536d14a240d10e61eac3f.png');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .shop {
-        width: 100px;
-        height: 150px;
+
+
+        display: none;
+    }
+
+    h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 25px;
+        color: #3C2C5B;
+        padding: 10px;
+        text-shadow: 3px 3px 3px grey;
+        animation: none;
+    }
+
+
+
+    .collection {
+        height: 50px;
+        width: 250px;
+        font-size: 20px;
+
+    }
+
+    button {
+        background-color: #D15056;
+        border-radius: 7px;
+        border: 2px solid #3C2C5B;
+        box-shadow: 2px 2px 2px grey;
+        font-family: "Bebas Neue", sans-serif;
+        padding: 5px;
+        color: white;
+    }
+
+    .produits {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .prod {
+        height: auto;
+        width: calc(50% - 40px);
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .prod:hover {
+        transform: scale(1.05);
     }
 
     .robe {
-        width: 150px;
-        height: 350px;
-
-        border-radius: 40px;
+        max-width: 100%;
+        height: 200px;
+        border-radius: 15px;
+        overflow: hidden;
     }
 
-    .star {
-        right: 156px;
-        top: 50px;
-    }
-     .fa-star{
-
+    .panier {
+        width: 100%;
+        height: 40px;
         font-size: 12px;
-        margin-top: 25px;
-       
+        border-radius: 0;
+        margin-right: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
 
-    .prod h4 {
-        font-size: 16px;
+    .panier:hover {
+        background-color: #5e4873;
     }
 
-    .prix {
-        font-size: 16px;
+    .butt {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
     }
 
     .titre {
-        width: 170px;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        position: relative;
     }
-    footer
-    {width: 100%;}
+
+    h4 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin: 0;
+    }
+
+    .prix {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 15px;
+        margin-bottom: 10px;
+        position: absolute;
+        left: 100px;
+        top: 8px;
+    }
+
+
+    .prod p {
+        font-family: "Montserrat", sans-serif;
+        color: #3C2C5B;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 100%;
+        height: 95px;
+        display: flex;
+        position: relative;
+    }
+
+    .star {
+        height: 30px;
+        width: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        color: gold;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .fa-star {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .chargement {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    ul {
+        display: none;
+    }
 
     .foot {
-
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: flex-start;
-        height: 200px;
-      
-       
+    }
+
+    .foot p {
+        border: 1px solid #3C2C5B;
+        font-weight: bold;
+    }
+
+    .bas:hover+ul,
+    .bas ul:hover {
+        display: block;
+
+    }
+
+    .flag {
+
+        width: 20px;
+    }
+
 }
-.dessous {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    h1 {
+        font-size: 50px;
+        padding: 15px;
+        animation: none;
+    }
+
+    h4 {
+        padding: 0;
+        margin-top: 5px;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .shop {
+        width: 178px;
+        height: auto;
+    }
+
+    .collection {
+        width: 220px;
+        height: 70px;
+        font-size: 18px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .produits {
+        justify-content: space-around;
+    }
+
+    .prod {
+        width: calc(33.33% - 90px);
+        margin: 15px;
+    }
+
+    .robe {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px gray;
+    }
+
+    .container {
+        width: 114px;
+        height: 123px;
+        position: relative;
+
+    }
+
+    .panier {
+        margin-right: 7px;
+    }
+
+    .prix {
+        position: absolute;
+        left: 130px;
+        top: 8px;
+
+    }
+
+    .flag {
+        width: 20px;
+    }
+
+
 }

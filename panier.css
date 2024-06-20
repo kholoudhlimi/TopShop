@@ -9,66 +9,75 @@ body {
 
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
+}
 
-
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .logo {
     width: 80px;
     height: 80px;
-    margin-top: 13px;
+    animation: fade 2s linear infinite;
+}
 
-    margin-right: 600px;
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .liste {
     display: flex;
     list-style-type: none;
-    text-align: center;
-    padding: 0 30px;
-
-
+    margin: 0;
+    padding: 0;
 }
 
 .lili {
-
-    display: inline-block;
-    padding: 0 30px;
-
-
+    margin-left: 20px;
 }
 
 a {
     color: black;
     text-decoration: none;
-    padding: 0 30px;
     font-family: montserrat, sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 i {
-    font-size: 35px;
-    padding-left: 5px;
-
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 .cart {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
 
 .name {
-    padding: 5px;
-    margin-left: 15px;
+    padding: 10px;
 }
+
 
 main {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -86,6 +95,7 @@ h1 {
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -95,6 +105,7 @@ h1 {
     width: 650px;
     height: 312px;
     display: flex;
+    flex-wrap: wrap;
     background-color: #E0949C;
     border: 2px solid #3C2C5B;
     box-shadow: 2px 2px 2px grey;
@@ -122,7 +133,6 @@ h3 {
 P {
     font-family: "monteserrat", sans-serif;
     color: #3C2C5B;
-    ;
     font-size: 16px;
     margin-top: 12px;
 
@@ -131,7 +141,6 @@ P {
 .nbr {
     font-family: "monteserrat", sans-serif;
     color: #3C2C5B;
-    ;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -151,6 +160,7 @@ P {
 .confirmer {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
@@ -442,7 +452,7 @@ li {
     height: 70px;
 }
 
-@media screen and (max-width: 1241px) and (min-width: 57px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     .logo {
         margin-right: 0;
@@ -466,30 +476,9 @@ li {
         font-size: 12px;
         text-align: center;
     }
-
-    .deux {
-        position: absolute;
-        bottom: -684px;
-    }
-
-    .coupon {
-        position: absolute;
-        bottom: -1036px;
-
-    }
-
-    .dessous {
-        position: absolute;
-        bottom: -1200px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 40px;
-    }
     .Media{
         width: 200px;
     }
-
 
     .logi {
         margin-left: 80px;
@@ -498,39 +487,205 @@ li {
 
 }
 
-@media screen and (max-width:400px) {
-    .box {
+@media (max-width: 767px) and (min-width: 0px){
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .menu {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .liste {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .lili {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .name {
+        display: none;
+    }
+
+
+    main {
+        width: 100%; 
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        align-content: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    .deux {
-        height: 900px;
-            position: absolute;
-            bottom: -838px;
-        }
-
-        .coupon {
-            position: absolute;
-            bottom: -1200px;
-
-        }
-        .dessous {
-            position: absolute;
-            bottom: -1350px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 40px;
-        }
+    h1{
+        font-size: 30px;
+    }
     .Media{
-        width: 200px;
+        width: 150px;
     }
+        .box {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            flex-direction: column;
+        }
+           
+        
+        
+            .valider {
+                display: flex;
+                justify-content: center;
+                flex-direction: column; 
+                flex-wrap: wrap;
+            }
+        
+            .carti {
+                width: 85%; 
+                height: auto; 
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .robe {
+                width: 100px;
+                height: 140px;
+                border-radius: 20px;
+                box-shadow: 2px 2px 2px gray;
+                margin: 10px auto;
+            }
+        
+            h3 {
+                font-size: 18px;
+                margin: 10px;
+                text-align: center; 
+            }
+        
+            p, .nbr {
+                font-size: 14px; 
+                margin: 10px auto; 
+                text-align: center; 
+            }
+        
+            .cone {
+                height: auto;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+            .confirmer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .coni, .coniX, .coniXX, .coniXXX {
+                height: 30px; 
+                width: 30px;
+                font-size: 20px; 
+                margin: 5px;
+            }
+        
+            .pan {
+                width: 100%; 
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+            }
+        
+            .but {
+                display: flex;
+                margin-top: 20px; 
+                margin-right: 5px;
+            }
+        
+            button {
+                height: 30px; 
+                width: 80px; 
+                font-size: 16px; 
+            }
+        
+            .coupon {
+                width: 85%; 
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }
+            .coupon h2{
+                position: absolute;
+                top:98px;
+                right:104px ;
+            }
+        
+            .cadeau {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .capture {
+                width: 200px; 
+                height: 100px; 
+            }
+        
+            h2 {
+                position: static;
+                font-size: 40px; 
+                text-align: center; 
+                margin-top: 20px;
+            }
+        
+            .lolo {
+                width: 20px; 
+                height: 20px;
+            }
+        input{
+            width: 70%;
+        }
+            .deux {
+                width: 85%; 
+                height: auto;
+                margin-left: 10px;
 
+            }
+        
+            form {
+                display: flex;
+                flex-direction: column; 
+            }
+            .forma{
+                margin-left: 20px;
+            }
+            footer{
+                display: flex;
+                flex-wrap: wrap;
+              width: 50%;
+            }
+            .dessous{
+                margin: 0;
+            }
+            .flag{
+                width: 15px;
+            }
 
-    }
+        }
+        
     

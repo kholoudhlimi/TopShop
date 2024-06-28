@@ -637,10 +637,8 @@ li {
 .foot{
     height: 300px;
 }
-.bas{
-
-    font-size: 14px;
- 
+div.pied{
+    width: 200px;
+    margin-left: 10px;
 }
-
 }

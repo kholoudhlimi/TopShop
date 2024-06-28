@@ -700,6 +700,9 @@ li {
 
     .flag {
         width: 15px;
+        margin-left: 5px;
     }
-
+.Media{
+    margin-left: 15px; 
+}
 }

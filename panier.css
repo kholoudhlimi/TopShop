@@ -328,10 +328,12 @@ input {
     padding: 5px;
     border: 1px solid #D15056;
 }
-.regler{
+
+.regler {
     width: 30px;
     height: 30px;
 }
+
 .livraison {
     display: flex;
     flex-direction: row;
@@ -476,7 +478,8 @@ li {
         font-size: 12px;
         text-align: center;
     }
-    .Media{
+
+    .Media {
         width: 200px;
     }
 
@@ -487,7 +490,7 @@ li {
 
 }
 
-@media (max-width: 767px) and (min-width: 0px){
+@media (max-width: 767px) and (min-width: 0px) {
     header {
         flex-direction: row;
         align-items: center;
@@ -520,7 +523,7 @@ li {
 
 
     main {
-        width: 100%; 
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -528,164 +531,175 @@ li {
         flex-wrap: wrap;
     }
 
-    h1{
+    h1 {
         font-size: 30px;
     }
-    .Media{
+
+    .Media {
         width: 150px;
     }
-        .box {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            align-content: flex-start;
-            flex-direction: column;
-        }
-           
-        
-        
-            .valider {
-                display: flex;
-                justify-content: center;
-                flex-direction: column; 
-                flex-wrap: wrap;
-            }
-        
-            .carti {
-                width: 85%; 
-                height: auto; 
-                display: flex;
-                flex-direction: column;
-            }
-        
-            .robe {
-                width: 100px;
-                height: 140px;
-                border-radius: 20px;
-                box-shadow: 2px 2px 2px gray;
-                margin: 10px auto;
-            }
-        
-            h3 {
-                font-size: 18px;
-                margin: 10px;
-                text-align: center; 
-            }
-        
-            p, .nbr {
-                font-size: 14px; 
-                margin: 10px auto; 
-                text-align: center; 
-            }
-        
-            .cone {
-                height: auto;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        
-            .confirmer {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        
-            .coni, .coniX, .coniXX, .coniXXX {
-                height: 30px; 
-                width: 30px;
-                font-size: 20px; 
-                margin: 5px;
-            }
-        
-            .pan {
-                width: 100%; 
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-end;
-                flex-wrap: wrap;
-            }
-        
-            .but {
-                display: flex;
-                margin-top: 20px; 
-                margin-right: 5px;
-            }
-        
-            button {
-                height: 30px; 
-                width: 80px; 
-                font-size: 16px; 
-            }
-        
-            .coupon {
-                width: 85%; 
-                height: auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: relative;
-            }
-            .coupon h2{
-                position: absolute;
-                top:98px;
-                right:104px ;
-            }
-        
-            .cadeau {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        
-            .capture {
-                width: 200px; 
-                height: 100px; 
-            }
-        
-            h2 {
-                position: static;
-                font-size: 40px; 
-                text-align: center; 
-                margin-top: 20px;
-            }
-        
-            .lolo {
-                width: 20px; 
-                height: 20px;
-            }
-        input{
-            width: 70%;
-        }
-            .deux {
-                width: 85%; 
-                height: auto;
-                margin-left: 10px;
 
-            }
-        
-            form {
-                display: flex;
-                flex-direction: column; 
-            }
-            .forma{
-                margin-left: 20px;
-            }
-            footer{
-                display: flex;
-                flex-wrap: wrap;
-              width: 50%;
-            }
-            .dessous{
-                margin: 0;
-            }
-            .flag{
-                width: 15px;
-            }
+    .box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        flex-direction: column;
+    }
 
-        }
-        
-    
+
+
+    .valider {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .carti {
+        width: 85%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .robe {
+        width: 100px;
+        height: 140px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px gray;
+        margin: 10px auto;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    p,
+    .nbr {
+        font-size: 14px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .cone {
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .confirmer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coni,
+    .coniX,
+    .coniXX,
+    .coniXXX {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .pan {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .but {
+        display: flex;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    button {
+        height: 30px;
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .coupon {
+        width: 85%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .coupon h2 {
+        position: absolute;
+        top: 98px;
+        right: 104px;
+    }
+
+    .cadeau {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .capture {
+        width: 200px;
+        height: 100px;
+    }
+
+    h2 {
+        position: static;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .lolo {
+        width: 20px;
+        height: 20px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .deux {
+        width: 85%;
+        height: auto;
+        margin-left: 20px;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forma {
+        margin-left: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .dessous {
+        margin: 0;
+    }
+
+    .flag {
+        width: 15px;
+    }
+
+}
